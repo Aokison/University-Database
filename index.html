@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSUF Database</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <script type="text/javascript"
+src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <body>
+        <h1>CSUF Database</h1>
+        <div>
+            <h2>Professor</h2>
+            <form action="getSSN.php" method="post">       <!--post
+method, links to ssn php file -->
+                <label for="SSN">SSN:</label><br>
+                <input type="text" id="SSN" name="SSN"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <form action="getCourseAndSection.php" method="post">
+<!--post method, links to courseNum and sectoinNum php file -->
+                <label for="courseNum">Course Number:</label><br>
+                <input type="text" id="courseNum" name="courseNum"><br>
+                <label for="sectionNum">Section Number:</label><br>
+                <input type="text" id="sectionNum" name="sectionNum"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <br> 
+        <div>
+            <h2>Student</h2>
+            <form action="getStudentCourse.php" method="post">
+<!--post method, links to studentCourse php file -->
+                <label for="studentCourse">Course Number:</label><br>
+                <input type="text" id="studentCourse"
+name="studentCourse"><br>
+                <input type="submit" value="Submit">
+            </form>
+	   <br>
+            <form action="getCWID.php" method="post">
+<!--post
+                <label for="cwid">CWID:</label><br>
+                <input type="text" id="cwid" name="cwid"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
